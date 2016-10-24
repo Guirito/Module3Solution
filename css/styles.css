@@ -1,0 +1,61 @@
+#header-nav {
+	background-color: lightgrey;
+	border-radius: 0;
+}
+
+.navbar-brand:hover, .navbar-brand:focus{
+	text-decoration: none;
+}
+.navbar-brand{
+	font-size: 2em;
+}
+
+/*Dropdown menu*/
+#collapsable-menu{
+	color: red;
+	text-align: center;
+	font-size: 1.3em;
+	background-color: grey;
+}
+
+/*The visible-xs class didn't work anywhere i implemented it
+	(the menu was displayed no matter the screen width)
+	but with my own media query it worked*/
+@media(min-width: 768px){
+	#collapsable-menu{
+		visibility: hidden;
+	}
+}
+
+#menu-list{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#menu-list li{
+	list-style-type: none;
+	padding: 2px;
+	border: 1px white solid;
+}
+#menu-list > li:hover{
+	background-color: lightgrey;
+}
+#menu-list > li > a{
+	color: white;
+}
+#menu-list > li > a:hover{
+	color: black;
+}
+
+
+/*Menu Items*/
+.itembox{
+	padding: 2%;
+}
+.menu-item{
+	background-color: #fcce9c;
+	padding: 10px;
+}
+.menu-item h2{
+	text-align: center;
+}
